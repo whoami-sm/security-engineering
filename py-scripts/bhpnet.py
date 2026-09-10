@@ -51,7 +51,7 @@ def client_sender(buffer):
                 response += data
                 if recv_len < 4096:
                     break
-            print(response)
+            print(response.decode(errors="ignore"))
 
             # wait for more input 
             buffer = input("")
