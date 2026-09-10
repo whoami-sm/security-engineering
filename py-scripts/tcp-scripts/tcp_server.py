@@ -23,7 +23,7 @@ def handle_thread(client_socket):
 		if not request:
 			print("[*] Client disconnected immediately.")
 			return
-		# safely decode ignoring invalide non-text characters
+		# safely decode ignoring invalid non-text characters
 		decode_request = request.decode("utf-8", errors = "ignore")
 		print("[*] Received: %s" % request.decode())
 		# send a response back to client so it does not just get an empty closure

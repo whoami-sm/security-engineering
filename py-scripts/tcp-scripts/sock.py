@@ -5,7 +5,7 @@
 """
 
 import socket
-target_host = "127.0.0.1" 
+target_host = "altaria.proxy.rlwy.net:56680" 
 target_port = 9999 
 
 # creating a socket object, establishing the tcp client with a socket object
