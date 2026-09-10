@@ -1,0 +1,15 @@
+# pyhton virtual environments
+myenv/
+venv/
+.venv/
+__pycache__/
+*.__pyc
+
+# pyinstaller compilation outputs
+build/
+dist/
+*.spec
+
+#system files
+.DS_Store
+Thumbs.db
