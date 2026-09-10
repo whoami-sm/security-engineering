@@ -5,8 +5,8 @@
 """
 
 import socket
-target_host = "altaria.proxy.rlwy.net:56680" 
-target_port = 9999 
+target_host = "altaria.proxy.rlwy.net" 
+target_port = 56680
 
 # creating a socket object, establishing the tcp client with a socket object
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
