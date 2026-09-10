@@ -10,6 +10,8 @@ server.bind((bind_ip, bind_port))
 server.listen(5)
 print("[*] Listening on %s:%d" % (bind_ip, bind_port))
 
+
+"""the thread handler function is used to handle multiple concurrent requests at the same time"""
 def handle_thread(client_socket):
 	request = client_socket.recv(1024)
 	print("[*] Received: %s" % request.decode())
