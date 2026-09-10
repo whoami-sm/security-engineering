@@ -12,7 +12,7 @@ print("[*] Listening on %s:%d" % (bind_ip, bind_port))
 
 def handle_thread(client_socket):
 	request = client_socket.recv(1024)
-	print("[*] Received: %s" % request)
+	print("[*] Received: %s" % request.decode())
 	client_socket.close()
 
 while True:
